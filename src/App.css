@@ -1,0 +1,235 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+}
+
+.cv-page {
+  max-width: 960px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.cv-name {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+.cv-title {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.cv-header-right {
+  text-align: right;
+}
+
+.btn-download {
+  padding: 6px 14px;
+  border: none;
+  background: #444;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.cv-email {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.cv-phone {
+  font-size: 13px;
+}
+
+/* Layout */
+.cv-main {
+  display: grid;
+  grid-template-columns: 3fr 1.1fr;
+  gap: 30px;
+}
+
+.cv-left {
+  border-right: 1px solid #eeeeee;
+  padding-right: 20px;
+}
+
+.cv-right {
+  padding-left: 10px;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 4px;
+}
+
+.cv-section p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.cv-list {
+  margin-left: 18px;
+}
+
+.cv-list li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.skills-grid h4 {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.sub-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.tech-row span {
+  border-bottom: 1px dotted #aaa;
+}
+
+/* Timeline (Education & Experience) */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.timeline-subtitle {
+  font-size: 12px;
+  color: #777;
+}
+
+.timeline-year {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Right column */
+.profile-photo-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.contact-box,
+.extra-box {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 8px;
+}
+
+.contact-box h3,
+.extra-box h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.contact-box p,
+.extra-box p {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.portfolio-item h4 {
+  font-size: 13px;
+}
+
+.portfolio-item p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.portfolio-item a {
+  font-size: 12px;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-main {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-left {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cv-right {
+    padding-left: 0;
+  }
+}
